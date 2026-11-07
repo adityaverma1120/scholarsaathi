@@ -1,0 +1,33 @@
+{
+  "templates": {
+    "local_keywords": {
+      "en": "Matched based on portal keywords: {terms}.",
+      "hi": "पोर्टल के मुख्य शब्दों के आधार पर सुसंगत: {terms}।"
+    },
+    "local_phrase": {
+      "en": "Matched your remark phrase '{terms}'.",
+      "hi": "आपकी टिप्पणी के वाक्यांश '{terms}' से सुसंगत।"
+    },
+    "ai_agreement": {
+      "en": "Both local matching and AI analysis identified {terms}.",
+      "hi": "स्थानीय मिलान और एआई विश्लेषण दोनों ने {terms} की पहचान की।"
+    },
+    "ai_understanding": {
+      "en": "Identified through AI classification as {terms}.",
+      "hi": "एआई वर्गीकरण द्वारा {terms} के रूप में पहचाना गया।"
+    },
+    "tap_selection": {
+      "en": "Selected directly from common scholarship status remarks.",
+      "hi": "सामान्य छात्रवृत्ति स्थिति टिप्पणियों से सीधे चुना गया।"
+    },
+    "disagreement_choice": {
+      "en": "Selected by student after comparing alternative interpretations.",
+      "hi": "वैकल्पिक व्याख्याओं की तुलना करने के बाद विद्यार्थी द्वारा चुना गया।"
+    },
+    "fallback": {
+      "en": "Matched based on closest verified scholarship pattern.",
+      "hi": "निकटतम सत्यापित छात्रवृत्ति पैटर्न के आधार पर सुसंगत।"
+    }
+  }
+}
+

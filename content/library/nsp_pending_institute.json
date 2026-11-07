@@ -1,0 +1,119 @@
+{
+  "id": "nsp_pending_institute",
+  "status": "draft",
+  "scheme_scope": "NSP Post Matric (pilot)",
+  "category": "waiting",
+  "triggers": [
+    "pending at institute",
+    "pending for institute verification",
+    "institute level",
+    "संस्थान स्तर पर लंबित"
+  ],
+  "negative_triggers": [
+    "defective",
+    "rejected",
+    "district"
+  ],
+  "keywords": [
+    "pending",
+    "institute",
+    "nodal",
+    "verification",
+    "college",
+    "ino",
+    "lambit"
+  ],
+  "language_variants": {
+    "en": [
+      "pending at institute",
+      "waiting for college verification",
+      "pending at ino desk"
+    ],
+    "hi": [
+      "संस्थान स्तर पर लंबित",
+      "कॉलेज सत्यापन बाकी है",
+      "नोडल अधिकारी के पास लंबित"
+    ],
+    "hinglish": [
+      "college level par pending hai",
+      "ino verification baaki hai",
+      "sanstha star par lambit"
+    ]
+  },
+  "description": "Application waiting for Institute Nodal Officer verification",
+  "what_the_screen_says": "Application Pending for Verification at Institute Level",
+  "cause": {
+    "en": "Your application has reached your college nodal desk and is waiting for their physical verification and approval.",
+    "hi": "आपका आवेदन आपके कॉलेज के नोडल पटल पर पहुँच चुका है और उनके सत्यापन एवं अनुमोदन की प्रतीक्षा कर रहा है।"
+  },
+  "inferred_meaning": {
+    "en": "The student has submitted the application, but the institute nodal officer has not yet certified the documents.",
+    "hi": "विद्यार्थी ने आवेदन जमा कर दिया है, लेकिन संस्थान के नोडल अधिकारी ने अभी दस्तावेजों का सत्यापन नहीं किया है।"
+  },
+  "who_acts": "institute",
+  "responsibility_label": {
+    "en": "Institute Action Needed",
+    "hi": "संस्थान कार्रवाई आवश्यक"
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "where": {
+        "en": "Institute Scholarship Office",
+        "hi": "संस्थान छात्रवृत्ति कार्यालय"
+      },
+      "carry": [
+        "Application Summary Printout",
+        "Fee Receipt",
+        "Income Certificate"
+      ],
+      "say": {
+        "en": "Sir, my NSP application is pending verification at the institute level. Here are my physical documents.",
+        "hi": "सर, मेरा एनएसपी आवेदन संस्थान स्तर पर सत्यापन हेतु लंबित है। ये मेरे मूल दस्तावेज हैं।"
+      }
+    },
+    {
+      "step_number": 2,
+      "where": {
+        "en": "Official NSP Portal",
+        "hi": "आधिकारिक एनएसपी पोर्टल"
+      },
+      "carry": [
+        "Application ID"
+      ],
+      "say": {
+        "en": "Checking if status changed to verified.",
+        "hi": "जाँच कर रहा हूँ कि क्या स्थिति सत्यापित में बदली है।"
+      }
+    }
+  ],
+  "typical_wait": {
+    "en": "Usually takes 1 to 2 weeks depending on your institute's verification drive.",
+    "hi": "संस्थान के सत्यापन चक्र के आधार पर सामान्यतः 1 से 2 सप्ताह लगते हैं।"
+  },
+  "deadline_text": {
+    "en": "Check the date on the portal.",
+    "hi": "पोर्टल पर तारीख की जांच करें।"
+  },
+  "escalate_if": {
+    "en": "If pending more than 14 days and close to verification deadline, meet the college principal or head of institution.",
+    "hi": "यदि 14 दिनों से अधिक लंबित है और अंतिम तिथि निकट है, तो संस्थान प्रमुख या प्राचार्य से मिलें।"
+  },
+  "official_destination": {
+    "url": "https://scholarships.gov.in/",
+    "label": {
+      "en": "Check Institute Verification Status on NSP",
+      "hi": "एनएसपी पर संस्थान सत्यापन स्थिति देखें"
+    }
+  },
+  "grievance_enabled": true,
+  "source": {
+    "title": "NSP Standard Operating Procedure for Institutes",
+    "issuer": "Department of Higher Education, MoE",
+    "url": "https://scholarships.gov.in/",
+    "checked_on": "2026-10-25"
+  },
+  "reviewed_by": [
+    "draft_author"
+  ]
+}

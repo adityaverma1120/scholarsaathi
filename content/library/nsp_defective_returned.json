@@ -1,0 +1,133 @@
+{
+  "id": "nsp_defective_returned",
+  "status": "draft",
+  "scheme_scope": "NSP Post Matric (pilot)",
+  "category": "returned",
+  "triggers": [
+    "defective",
+    "returned for correction",
+    "दोषपूर्ण",
+    "defect",
+    "correction"
+  ],
+  "negative_triggers": [
+    "rejected",
+    "pending",
+    "approved"
+  ],
+  "keywords": [
+    "defective",
+    "defect",
+    "correction",
+    "returned",
+    "modify",
+    "resubmit",
+    "doshpurn"
+  ],
+  "language_variants": {
+    "en": [
+      "application defective",
+      "form returned for correction",
+      "institute marked defect"
+    ],
+    "hi": [
+      "आवेदन में त्रुटि",
+      "संस्थान द्वारा दोषपूर्ण",
+      "संशोधन के लिए वापस"
+    ],
+    "hinglish": [
+      "form defective ho gaya",
+      "correction ke liye wapas aaya",
+      "college ne defect mark kiya"
+    ]
+  },
+  "description": "Application marked defective by Institute Nodal Officer",
+  "what_the_screen_says": "Application marked defective by Institute Nodal Officer",
+  "cause": {
+    "en": "Your institute flagged an issue in your form or documents that you must correct and resubmit.",
+    "hi": "आपके संस्थान ने आपके फॉर्म या दस्तावेजों में कोई कमी पाई है जिसे आपको सुधारकर पुनः जमा करना होगा।"
+  },
+  "inferred_meaning": {
+    "en": "The institute returned the application for student correction. The student must update documents on the portal.",
+    "hi": "संस्थान ने सुधार हेतु आवेदन वापस लौटाया है। विद्यार्थी को पोर्टल पर आवश्यक दस्तावेज संशोधित करने होंगे।"
+  },
+  "who_acts": "student",
+  "responsibility_label": {
+    "en": "Student Action Needed",
+    "hi": "विद्यार्थी कार्रवाई आवश्यक"
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "where": {
+        "en": "Official NSP Portal",
+        "hi": "आधिकारिक एनएसपी पोर्टल"
+      },
+      "carry": [
+        "Portal Login Credentials"
+      ],
+      "say": {
+        "en": "I need to check which remark my institute left.",
+        "hi": "मुझे देखना है कि कॉलेज ने क्या टिप्पणी लिखी है।"
+      }
+    },
+    {
+      "step_number": 2,
+      "where": {
+        "en": "Application Form Edit Section",
+        "hi": "आवेदन पत्र संपादन अनुभाग"
+      },
+      "carry": [
+        "Updated Clear Certificate/Document"
+      ],
+      "say": {
+        "en": "I am uploading the corrected certificate.",
+        "hi": "मैं सही प्रमाण पत्र अपलोड कर रहा हूँ।"
+      }
+    },
+    {
+      "step_number": 3,
+      "where": {
+        "en": "Institute Scholarship Desk",
+        "hi": "संस्थान छात्रवृत्ति पटल"
+      },
+      "carry": [
+        "Printed Correction Receipt",
+        "Original Document"
+      ],
+      "say": {
+        "en": "Sir, I have corrected my defective application on NSP. Please re-verify it.",
+        "hi": "सर, मैंने एनएसपी पर अपना दोषपूर्ण आवेदन ठीक कर दिया है। कृपया पुनः सत्यापित करें।"
+      }
+    }
+  ],
+  "typical_wait": {
+    "en": "Usually 3 to 7 working days for institute re-verification.",
+    "hi": "संस्थान द्वारा पुनः सत्यापन में सामान्यतः 3 से 7 कार्यदिवस लगते हैं।"
+  },
+  "deadline_text": {
+    "en": "Check the date on the portal.",
+    "hi": "पोर्टल पर तारीख की जांच करें।"
+  },
+  "escalate_if": {
+    "en": "If institute verification deadline is within 48 hours, visit the institute nodal officer in person.",
+    "hi": "यदि सत्यापन की अंतिम तिथि 48 घंटों में है, तो व्यक्तिगत रूप से कॉलेज नोडल अधिकारी से मिलें।"
+  },
+  "official_destination": {
+    "url": "https://scholarships.gov.in/",
+    "label": {
+      "en": "Login to NSP Portal to Edit Form",
+      "hi": "फॉर्म संशोधित करने के लिए एनएसपी पोर्टल पर लॉगिन करें"
+    }
+  },
+  "grievance_enabled": true,
+  "source": {
+    "title": "NSP Institute Verification Guidelines",
+    "issuer": "National Scholarship Division, MoE / MeitY",
+    "url": "https://scholarships.gov.in/",
+    "checked_on": "2026-10-25"
+  },
+  "reviewed_by": [
+    "draft_author"
+  ]
+}

@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "nsp_approved_money_not_received",
+    "status": "draft",
+    "scheme_scope": "NSP Post Matric (pilot)",
+    "category": "waiting",
+    "triggers": [
+      "scholarship sanctioned",
+      "payment under processing",
+      "processed to pfms",
+      "money not received",
+      "scholarship not received",
+      "not received",
+      "राशि प्राप्त नहीं हुई"
+    ],
+    "negative_triggers": [
+      "rejected",
+      "defective"
+    ],
+    "keywords": [
+      "sanctioned",
+      "pfms",
+      "disbursement",
+      "processing",
+      "credited",
+      "payment",
+      "paisa"
+    ],
+    "language_variants": {
+      "en": [
+        "scholarship sanctioned payment under process",
+        "processed for payment pfms",
+        "approved but money not credited"
+      ],
+      "hi": [
+        "छात्रवृत्ति स्वीकृत भुगतान प्रक्रियाधीन",
+        "पीएफएमएस को भेजा गया",
+        "अनुमोदित किंतु राशि अप्राप्त"
+      ],
+      "hinglish": [
+        "scholarship approve ho gayi paisa nahi aaya",
+        "payment under processing dikha raha hai",
+        "pfms sent"
+      ]
+    },
+    "description": "Application sanctioned by ministry and forwarded to PFMS for DBT payment processing",
+    "what_the_screen_says": "Scholarship Sanctioned: Payment File Sent to PFMS for DBT Processing",
+    "cause": {
+      "en": "Your application has passed all administrative reviews and the payment batch is queued at PFMS for bank credit.",
+      "hi": "आपका आवेदन सभी प्रशासनिक जांचों में उत्तीर्ण हो चुका है और बैंक खाते में अंतरण हेतु पीएफएमएस में कतारबद्ध है।"
+    },
+    "inferred_meaning": {
+      "en": "Approval is complete at ministry level. The transaction is in the banking clearance queue. Verify DBT seeding.",
+      "hi": "मंत्रालय स्तर पर स्वीकृति पूर्ण है। लेनदेन बैंकिंग निकासी प्रक्रिया में है। कृपया डीबीटी सीडिंग सुनिश्चित करें।"
+    },
+    "who_acts": "bank",
+    "responsibility_label": {
+      "en": "Payment Processing / Bank",
+      "hi": "भुगतान प्रक्रियाधीन / बैंक"
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "where": {
+          "en": "Official PFMS Portal",
+          "hi": "आधिकारिक पीएफएमएस पोर्टल"
+        },
+        "carry": [
+          "Application ID",
+          "Bank Account Number"
+        ],
+        "say": {
+          "en": "Tracking DBT payment token and disbursement date on PFMS.",
+          "hi": "पीएफएमएस पर डीबीटी भुगतान टोकन और अंतरण तिथि देख रहा हूँ।"
+        }
+      },
+      {
+        "step_number": 2,
+        "where": {
+          "en": "Bank Branch",
+          "hi": "बैंक शाखा"
+        },
+        "carry": [
+          "Aadhaar Card",
+          "Passbook"
+        ],
+        "say": {
+          "en": "Inquiring about incoming DBT scholarship credit status with my Aadhaar linked account.",
+          "hi": "अपने आधार लिंक खाते में आने वाली डीबीटी छात्रवृत्ति क्रेडिट स्थिति के बारे में जानकारी ले रहा हूँ।"
+        }
+      }
+    ],
+    "typical_wait": {
+      "en": "PFMS batch disbursement typically takes 2 to 3 weeks following file clearance.",
+      "hi": "पीएफएमएस बैच भुगतान सामान्यतः फाइल निकासी के बाद 2 से 3 सप्ताह का समय लेता है।"
+    },
+    "deadline_text": {
+      "en": "Check the date on the portal.",
+      "hi": "पोर्टल पर तारीख की जांच करें।"
+    },
+    "escalate_if": {
+      "en": "If transaction shows credited on PFMS but not in passbook, request transaction reference (UTR) from bank.",
+      "hi": "यदि पीएफएमएस पर जमा दिखता है परंतु पासबुक में नहीं, तो बैंक से यूटीआर नंबर मांगें।"
+    },
+    "official_destination": {
+      "url": "https://pfms.nic.in",
+      "label": {
+        "en": "Track Payment on PFMS",
+        "hi": "पीएफएमएस पर भुगतान ट्रैक करें"
+      }
+    },
+    "grievance_enabled": true,
+    "source": {
+      "title": "PFMS Scholarship Payment Process Manual",
+      "issuer": "Public Financial Management System, Ministry of Finance",
+      "url": "https://pfms.nic.in",
+      "checked_on": "2026-10-25"
+    },
+    "reviewed_by": [
+      "draft_author"
+    ]
+  },
+  {
+    "id": "nsp_bank_validation_failed",
+    "status": "draft",
+    "scheme_scope": "NSP Post Matric (pilot)",
+    "category": "not_approved",
+    "triggers": [
+      "bank account validation failed",
+      "bank validation failed",
+      "account rejected by pfms",
+      "ifsc invalid",
+      "बैंक खाता सत्यापन विफल"
+    ],
+    "negative_triggers": [
+      "institute",
+      "district"
+    ],
+    "keywords": [
+      "bank",
+      "pfms",
+      "npci",
+      "dbt",
+      "ifsc",
+      "account",
+      "validation",
+      "khata"
+    ],
+    "language_variants": {
+      "en": [
+        "bank validation failed",
+        "account validation rejected by pfms",
+        "invalid bank account details"
+      ],
+      "hi": [
+        "बैंक सत्यापन विफल",
+        "खाता विवरण अमान्य",
+        "पीएफएमएस द्वारा बैंक अस्वीकृत"
+      ],
+      "hinglish": [
+        "bank validation fail ho gaya",
+        "account match nahi hua",
+        "pfms ne reject kiya"
+      ]
+    },
+    "description": "Bank account validation failed on NSP / PFMS due to name mismatch or invalid details",
+    "what_the_screen_says": "Bank Account Validation Failed: Name mismatch or IFSC invalid or account inactive",
+    "cause": {
+      "en": "PFMS could not validate your bank account because of name spelling differences, invalid IFSC, or inactive DBT mapping.",
+      "hi": "पीएफएमएस आपके बैंक खाते का सत्यापन नहीं कर सका क्योंकि नाम की वर्तनी में अंतर, अमान्य आईएफएससी या निष्क्रिय डीबीटी मैपिंग है।"
+    },
+    "inferred_meaning": {
+      "en": "The bank details registered in NSP do not match PFMS or NPCI records. Bank seeding and account correction are required.",
+      "hi": "एनएसपी पर दर्ज बैंक विवरण पीएफएमएस या एनपीसीआई रिकॉर्ड से मेल नहीं खाते। बैंक सीडिंग और खाता सुधार आवश्यक है।"
+    },
+    "who_acts": "bank",
+    "responsibility_label": {
+      "en": "Bank & Student Action Needed",
+      "hi": "बैंक एवं विद्यार्थी कार्रवाई आवश्यक"
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "where": {
+          "en": "Bank Home Branch",
+          "hi": "बैंक गृह शाखा"
+        },
+        "carry": [
+          "Aadhaar Card",
+          "Bank Passbook"
+        ],
+        "say": {
+          "en": "Please check if my bank account is active and seeded with Aadhaar for NPCI DBT.",
+          "hi": "कृपया जांचें कि क्या मेरा बैंक खाता सक्रिय है और एनपीसीआई डीबीटी के लिए आधार से लिंक है।"
+        }
+      },
+      {
+        "step_number": 2,
+        "where": {
+          "en": "Official NSP Portal",
+          "hi": "आधिकारिक एनएसपी पोर्टल"
+        },
+        "carry": [
+          "Verified Passbook with Correct IFSC"
+        ],
+        "say": {
+          "en": "Updating bank account details if correction window is open on portal.",
+          "hi": "पोर्टल पर सुधार विंडो खुली होने पर सही बैंक विवरण अपडेट कर रहा हूँ।"
+        }
+      },
+      {
+        "step_number": 3,
+        "where": {
+          "en": "Official PFMS Portal",
+          "hi": "आधिकारिक पीएफएमएस पोर्टल"
+        },
+        "carry": [
+          "Application ID",
+          "Bank Account Number"
+        ],
+        "say": {
+          "en": "Tracking DBT payment status on Know Your Payments section.",
+          "hi": "नो योर पेमेंट्स अनुभाग में डीबीटी भुगतान स्थिति देख रहा हूँ।"
+        }
+      }
+    ],
+    "typical_wait": {
+      "en": "NPCI Aadhaar seeding takes 48 to 72 hours to reflect across national payment systems.",
+      "hi": "एनपीसीआई आधार सीडिंग को राष्ट्रीय भुगतान प्रणालियों में दिखने में 48 से 72 घंटे लगते हैं।"
+    },
+    "deadline_text": {
+      "en": "Check the date on the portal.",
+      "hi": "पोर्टल पर तारीख की जांच करें।"
+    },
+    "escalate_if": {
+      "en": "If bank branch does not link DBT, submit NPCI Aadhaar seeding mandate form to branch manager.",
+      "hi": "यदि बैंक शाखा डीबीटी लिंक नहीं करती है, तो शाखा प्रबंधक को एनपीसीआई आधार सीडिंग फॉर्म प्रस्तुत करें।"
+    },
+    "official_destination": {
+      "url": "https://pfms.nic.in",
+      "label": {
+        "en": "Check DBT Status on PFMS Portal",
+        "hi": "पीएफएमएस पोर्टल पर डीबीटी स्थिति देखें"
+      }
+    },
+    "grievance_enabled": true,
+    "source": {
+      "title": "PFMS Direct Benefit Transfer Guidelines",
+      "issuer": "Public Financial Management System, Ministry of Finance",
+      "url": "https://pfms.nic.in",
+      "checked_on": "2026-10-25"
+    },
+    "reviewed_by": [
+      "draft_author"
+    ]
+  },
+  {
+    "id": "nsp_defective_returned",
+    "status": "draft",
+    "scheme_scope": "NSP Post Matric (pilot)",
+    "category": "returned",
+    "triggers": [
+      "defective",
+      "returned for correction",
+      "दोषपूर्ण",
+      "defect",
+      "correction"
+    ],
+    "negative_triggers": [
+      "rejected",
+      "pending",
+      "approved"
+    ],
+    "keywords": [
+      "defective",
+      "defect",
+      "correction",
+      "returned",
+      "modify",
+      "resubmit",
+      "doshpurn"
+    ],
+    "language_variants": {
+      "en": [
+        "application defective",
+        "form returned for correction",
+        "institute marked defect"
+      ],
+      "hi": [
+        "आवेदन में त्रुटि",
+        "संस्थान द्वारा दोषपूर्ण",
+        "संशोधन के लिए वापस"
+      ],
+      "hinglish": [
+        "form defective ho gaya",
+        "correction ke liye wapas aaya",
+        "college ne defect mark kiya"
+      ]
+    },
+    "description": "Application marked defective by Institute Nodal Officer",
+    "what_the_screen_says": "Application marked defective by Institute Nodal Officer",
+    "cause": {
+      "en": "Your institute flagged an issue in your form or documents that you must correct and resubmit.",
+      "hi": "आपके संस्थान ने आपके फॉर्म या दस्तावेजों में कोई कमी पाई है जिसे आपको सुधारकर पुनः जमा करना होगा।"
+    },
+    "inferred_meaning": {
+      "en": "The institute returned the application for student correction. The student must update documents on the portal.",
+      "hi": "संस्थान ने सुधार हेतु आवेदन वापस लौटाया है। विद्यार्थी को पोर्टल पर आवश्यक दस्तावेज संशोधित करने होंगे।"
+    },
+    "who_acts": "student",
+    "responsibility_label": {
+      "en": "Student Action Needed",
+      "hi": "विद्यार्थी कार्रवाई आवश्यक"
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "where": {
+          "en": "Official NSP Portal",
+          "hi": "आधिकारिक एनएसपी पोर्टल"
+        },
+        "carry": [
+          "Portal Login Credentials"
+        ],
+        "say": {
+          "en": "I need to check which remark my institute left.",
+          "hi": "मुझे देखना है कि कॉलेज ने क्या टिप्पणी लिखी है।"
+        }
+      },
+      {
+        "step_number": 2,
+        "where": {
+          "en": "Application Form Edit Section",
+          "hi": "आवेदन पत्र संपादन अनुभाग"
+        },
+        "carry": [
+          "Updated Clear Certificate/Document"
+        ],
+        "say": {
+          "en": "I am uploading the corrected certificate.",
+          "hi": "मैं सही प्रमाण पत्र अपलोड कर रहा हूँ।"
+        }
+      },
+      {
+        "step_number": 3,
+        "where": {
+          "en": "Institute Scholarship Desk",
+          "hi": "संस्थान छात्रवृत्ति पटल"
+        },
+        "carry": [
+          "Printed Correction Receipt",
+          "Original Document"
+        ],
+        "say": {
+          "en": "Sir, I have corrected my defective application on NSP. Please re-verify it.",
+          "hi": "सर, मैंने एनएसपी पर अपना दोषपूर्ण आवेदन ठीक कर दिया है। कृपया पुनः सत्यापित करें।"
+        }
+      }
+    ],
+    "typical_wait": {
+      "en": "Usually 3 to 7 working days for institute re-verification.",
+      "hi": "संस्थान द्वारा पुनः सत्यापन में सामान्यतः 3 से 7 कार्यदिवस लगते हैं।"
+    },
+    "deadline_text": {
+      "en": "Check the date on the portal.",
+      "hi": "पोर्टल पर तारीख की जांच करें।"
+    },
+    "escalate_if": {
+      "en": "If institute verification deadline is within 48 hours, visit the institute nodal officer in person.",
+      "hi": "यदि सत्यापन की अंतिम तिथि 48 घंटों में है, तो व्यक्तिगत रूप से कॉलेज नोडल अधिकारी से मिलें।"
+    },
+    "official_destination": {
+      "url": "https://scholarships.gov.in/",
+      "label": {
+        "en": "Login to NSP Portal to Edit Form",
+        "hi": "फॉर्म संशोधित करने के लिए एनएसपी पोर्टल पर लॉगिन करें"
+      }
+    },
+    "grievance_enabled": true,
+    "source": {
+      "title": "NSP Institute Verification Guidelines",
+      "issuer": "National Scholarship Division, MoE / MeitY",
+      "url": "https://scholarships.gov.in/",
+      "checked_on": "2026-10-25"
+    },
+    "reviewed_by": [
+      "draft_author"
+    ]
+  },
+  {
+    "id": "nsp_duplicate_application",
+    "status": "draft",
+    "scheme_scope": "NSP Post Matric (pilot)",
+    "category": "not_approved",
+    "triggers": [
+      "duplicate application detected",
+      "duplicate application",
+      "already applied with same aadhaar",
+      "doosra aavedan",
+      "समान आधार से दोहरा आवेदन"
+    ],
+    "negative_triggers": [
+      "bank",
+      "approved"
+    ],
+    "keywords": [
+      "duplicate",
+      "multiple",
+      "aadhaar",
+      "already",
+      "registered",
+      "dohra",
+      "same"
+    ],
+    "language_variants": {
+      "en": [
+        "duplicate application detected",
+        "already submitted an application",
+        "multiple applications with same aadhaar"
+      ],
+      "hi": [
+        "समान आधार से दोहरा आवेदन",
+        "एक से अधिक आवेदन पाए गए",
+        "पहले से पंजीकृत आवेदन"
+      ],
+      "hinglish": [
+        "duplicate application show kar raha hai",
+        "ek se jyada form bhar diya tha",
+        "same aadhaar already registered"
+      ]
+    },
+    "description": "Application marked rejected because a duplicate application was detected on NSP",
+    "what_the_screen_says": "Application Rejected: Duplicate Application Detected with Same Aadhaar / Student Details",
+    "cause": {
+      "en": "NSP rules permit only one active scholarship application per student; a duplicate submission with your details was found.",
+      "hi": "एनएसपी नियमों के अनुसार प्रति विद्यार्थी केवल एक सक्रिय आवेदन की अनुमति है; आपके विवरण के साथ दोहरा आवेदन मिला है।"
+    },
+    "inferred_meaning": {
+      "en": "The system de-duplicated records and rejected this entry because another active application exists under this Aadhaar or demographic ID.",
+      "hi": "सिस्टम ने रिकॉर्ड की जांच की और इस प्रविष्टि को अस्वीकृत किया क्योंकि इस आधार या विवरण के तहत दूसरा सक्रिय आवेदन मौजूद है।"
+    },
+    "who_acts": "student",
+    "responsibility_label": {
+      "en": "Student Action Needed",
+      "hi": "विद्यार्थी कार्रवाई आवश्यक"
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "where": {
+          "en": "Official NSP Portal",
+          "hi": "आधिकारिक एनएसपी पोर्टल"
+        },
+        "carry": [
+          "Registered Mobile Number"
+        ],
+        "say": {
+          "en": "I am checking which application ID was retained as the primary submission.",
+          "hi": "मैं देख रहा हूँ कि कौन सा आवेदन मुख्य माना गया है।"
+        }
+      },
+      {
+        "step_number": 2,
+        "where": {
+          "en": "State Nodal Officer Helpdesk",
+          "hi": "राज्य नोडल अधिकारी सहायता पटल"
+        },
+        "carry": [
+          "Both Application IDs",
+          "Aadhaar Card"
+        ],
+        "say": {
+          "en": "Submitting written clarification to cancel the accidental second application.",
+          "hi": "गलती से भरे गए दूसरे आवेदन को रद्द कराने हेतु लिखित अनुरोध प्रस्तुत कर रहा हूँ।"
+        }
+      }
+    ],
+    "typical_wait": {
+      "en": "Administrative resolution of duplicate applications depends on state nodal officer approval.",
+      "hi": "दोहरे आवेदनों का प्रशासनिक समाधान राज्य नोडल अधिकारी के अनुमोदन पर निर्भर करता है।"
+    },
+    "deadline_text": {
+      "en": "Check the date on the portal.",
+      "hi": "पोर्टल पर तारीख की जांच करें।"
+    },
+    "escalate_if": {
+      "en": "If duplicate was registered fraudulently, lodge a complaint immediately on NSP national grievance desk.",
+      "hi": "यदि किसी अन्य ने आपके आधार का दुरुपयोग किया है, तो तुरंत एनएसपी राष्ट्रीय शिकायत पटल पर शिकायत दर्ज करें।"
+    },
+    "official_destination": {
+      "url": "https://scholarships.gov.in/",
+      "label": {
+        "en": "Review Registered Applications on NSP",
+        "hi": "एनएसपी पर पंजीकृत आवेदनों की समीक्षा करें"
+      }
+    },
+    "grievance_enabled": true,
+    "source": {
+      "title": "NSP De-duplication Policy",
+      "issuer": "National Scholarship Division, MoE / MeitY",
+      "url": "https://scholarships.gov.in/",
+      "checked_on": "2026-10-25"
+    },
+    "reviewed_by": [
+      "draft_author"
+    ]
+  },
+  {
+    "id": "nsp_pending_district_state",
+    "status": "draft",
+    "scheme_scope": "NSP Post Matric (pilot)",
+    "category": "waiting",
+    "triggers": [
+      "pending for district verification",
+      "pending at district level",
+      "pending at state level",
+      "pending at dno",
+      "जिला स्तर पर लंबित"
+    ],
+    "negative_triggers": [
+      "institute",
+      "defective",
+      "bank",
+      "rejected"
+    ],
+    "keywords": [
+      "district",
+      "state",
+      "dno",
+      "sno",
+      "nodal",
+      "pending",
+      "verification",
+      "jila"
+    ],
+    "language_variants": {
+      "en": [
+        "pending at district level",
+        "waiting for dno approval",
+        "pending for state verification"
+      ],
+      "hi": [
+        "जिला स्तर पर लंबित",
+        "डीएनओ सत्यापन की प्रतीक्षा",
+        "राज्य नोडल स्तर पर लंबित"
+      ],
+      "hinglish": [
+        "district level par pending hai",
+        "dno verification baaki hai",
+        "state level par ruka hai"
+      ]
+    },
+    "description": "Application waiting for District or State Nodal Officer verification",
+    "what_the_screen_says": "Application Pending for Verification at District / State Nodal Officer Level",
+    "cause": {
+      "en": "Your application was verified by your institute and is currently queued for district or state nodal officer verification.",
+      "hi": "आपका आवेदन आपके संस्थान द्वारा सत्यापित किया जा चुका है और वर्तमान में जिला या राज्य नोडल अधिकारी के सत्यापन हेतु प्रतीक्षारत है।"
+    },
+    "inferred_meaning": {
+      "en": "The college verification stage is complete. District or state authorities are performing second-tier administrative verification.",
+      "hi": "कॉलेज स्तर का सत्यापन पूर्ण हो चुका है। जिला या राज्य प्रशासन द्वारा द्वितीय चरण का सत्यापन किया जा रहा है।"
+    },
+    "who_acts": "district_state",
+    "responsibility_label": {
+      "en": "District / State Action Needed",
+      "hi": "जिला / राज्य कार्रवाई आवश्यक"
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "where": {
+          "en": "Official NSP Portal",
+          "hi": "आधिकारिक एनएसपी पोर्टल"
+        },
+        "carry": [
+          "Application ID"
+        ],
+        "say": {
+          "en": "I am tracking if my district verification status has been updated.",
+          "hi": "मैं देख रहा हूँ कि क्या जिला सत्यापन स्थिति अद्यतित हुई है।"
+        }
+      },
+      {
+        "step_number": 2,
+        "where": {
+          "en": "District Social Welfare or Education Office",
+          "hi": "जिला समाज कल्याण या शिक्षा कार्यालय"
+        },
+        "carry": [
+          "Application Form Copy",
+          "College Verification Certificate"
+        ],
+        "say": {
+          "en": "Sir, my application has passed institute verification. When will district-level verification be completed?",
+          "hi": "सर, मेरा आवेदन कॉलेज से सत्यापित हो चुका है। जिला स्तर पर सत्यापन कब तक पूर्ण होगा?"
+        }
+      }
+    ],
+    "typical_wait": {
+      "en": "Typically 2 to 4 weeks during state administrative verification cycles.",
+      "hi": "राज्य प्रशासनिक सत्यापन चक्र के दौरान सामान्यतः 2 से 4 सप्ताह लगते हैं।"
+    },
+    "deadline_text": {
+      "en": "Check the date on the portal.",
+      "hi": "पोर्टल पर तारीख की जांच करें।"
+    },
+    "escalate_if": {
+      "en": "If pending past state timeline, consult District Welfare Officer or file query on state helpdesk.",
+      "hi": "यदि राज्य समयसीमा के बाद भी लंबित है, तो जिला कल्याण अधिकारी से संपर्क करें।"
+    },
+    "official_destination": {
+      "url": "https://scholarships.gov.in/",
+      "label": {
+        "en": "Check DNO Status on NSP",
+        "hi": "एनएसपी पर जिला नोडल स्थिति देखें"
+      }
+    },
+    "grievance_enabled": true,
+    "source": {
+      "title": "NSP District Verification Guidelines",
+      "issuer": "Department of Higher Education, MoE",
+      "url": "https://scholarships.gov.in/",
+      "checked_on": "2026-10-25"
+    },
+    "reviewed_by": [
+      "draft_author"
+    ]
+  },
+  {
+    "id": "nsp_pending_institute",
+    "status": "draft",
+    "scheme_scope": "NSP Post Matric (pilot)",
+    "category": "waiting",
+    "triggers": [
+      "pending at institute",
+      "pending for institute verification",
+      "institute level",
+      "संस्थान स्तर पर लंबित"
+    ],
+    "negative_triggers": [
+      "defective",
+      "rejected",
+      "district"
+    ],
+    "keywords": [
+      "pending",
+      "institute",
+      "nodal",
+      "verification",
+      "college",
+      "ino",
+      "lambit"
+    ],
+    "language_variants": {
+      "en": [
+        "pending at institute",
+        "waiting for college verification",
+        "pending at ino desk"
+      ],
+      "hi": [
+        "संस्थान स्तर पर लंबित",
+        "कॉलेज सत्यापन बाकी है",
+        "नोडल अधिकारी के पास लंबित"
+      ],
+      "hinglish": [
+        "college level par pending hai",
+        "ino verification baaki hai",
+        "sanstha star par lambit"
+      ]
+    },
+    "description": "Application waiting for Institute Nodal Officer verification",
+    "what_the_screen_says": "Application Pending for Verification at Institute Level",
+    "cause": {
+      "en": "Your application has reached your college nodal desk and is waiting for their physical verification and approval.",
+      "hi": "आपका आवेदन आपके कॉलेज के नोडल पटल पर पहुँच चुका है और उनके सत्यापन एवं अनुमोदन की प्रतीक्षा कर रहा है।"
+    },
+    "inferred_meaning": {
+      "en": "The student has submitted the application, but the institute nodal officer has not yet certified the documents.",
+      "hi": "विद्यार्थी ने आवेदन जमा कर दिया है, लेकिन संस्थान के नोडल अधिकारी ने अभी दस्तावेजों का सत्यापन नहीं किया है।"
+    },
+    "who_acts": "institute",
+    "responsibility_label": {
+      "en": "Institute Action Needed",
+      "hi": "संस्थान कार्रवाई आवश्यक"
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "where": {
+          "en": "Institute Scholarship Office",
+          "hi": "संस्थान छात्रवृत्ति कार्यालय"
+        },
+        "carry": [
+          "Application Summary Printout",
+          "Fee Receipt",
+          "Income Certificate"
+        ],
+        "say": {
+          "en": "Sir, my NSP application is pending verification at the institute level. Here are my physical documents.",
+          "hi": "सर, मेरा एनएसपी आवेदन संस्थान स्तर पर सत्यापन हेतु लंबित है। ये मेरे मूल दस्तावेज हैं।"
+        }
+      },
+      {
+        "step_number": 2,
+        "where": {
+          "en": "Official NSP Portal",
+          "hi": "आधिकारिक एनएसपी पोर्टल"
+        },
+        "carry": [
+          "Application ID"
+        ],
+        "say": {
+          "en": "Checking if status changed to verified.",
+          "hi": "जाँच कर रहा हूँ कि क्या स्थिति सत्यापित में बदली है।"
+        }
+      }
+    ],
+    "typical_wait": {
+      "en": "Usually takes 1 to 2 weeks depending on your institute's verification drive.",
+      "hi": "संस्थान के सत्यापन चक्र के आधार पर सामान्यतः 1 से 2 सप्ताह लगते हैं।"
+    },
+    "deadline_text": {
+      "en": "Check the date on the portal.",
+      "hi": "पोर्टल पर तारीख की जांच करें।"
+    },
+    "escalate_if": {
+      "en": "If pending more than 14 days and close to verification deadline, meet the college principal or head of institution.",
+      "hi": "यदि 14 दिनों से अधिक लंबित है और अंतिम तिथि निकट है, तो संस्थान प्रमुख या प्राचार्य से मिलें।"
+    },
+    "official_destination": {
+      "url": "https://scholarships.gov.in/",
+      "label": {
+        "en": "Check Institute Verification Status on NSP",
+        "hi": "एनएसपी पर संस्थान सत्यापन स्थिति देखें"
+      }
+    },
+    "grievance_enabled": true,
+    "source": {
+      "title": "NSP Standard Operating Procedure for Institutes",
+      "issuer": "Department of Higher Education, MoE",
+      "url": "https://scholarships.gov.in/",
+      "checked_on": "2026-10-25"
+    },
+    "reviewed_by": [
+      "draft_author"
+    ]
+  },
+  {
+    "id": "nsp_rejected_institute",
+    "status": "draft",
+    "scheme_scope": "NSP Post Matric (pilot)",
+    "category": "not_approved",
+    "triggers": [
+      "rejected by institute",
+      "institute rejected",
+      "rejected at institute level",
+      "संस्थान द्वारा अस्वीकृत"
+    ],
+    "negative_triggers": [
+      "defective",
+      "district",
+      "approved",
+      "pending"
+    ],
+    "keywords": [
+      "rejected",
+      "institute",
+      "asweekrit",
+      "disapproved",
+      "cancelled",
+      "college"
+    ],
+    "language_variants": {
+      "en": [
+        "rejected by institute",
+        "college nodal officer rejected",
+        "institute level rejection"
+      ],
+      "hi": [
+        "संस्थान द्वारा अस्वीकृत",
+        "कॉलेज ने निरस्त कर दिया",
+        "संस्थान स्तर पर अस्वीकार"
+      ],
+      "hinglish": [
+        "college ne reject kar diya",
+        "institute se reject ho gaya",
+        "ino disapproved"
+      ]
+    },
+    "description": "Application marked rejected by Institute Nodal Officer",
+    "what_the_screen_says": "Application Rejected by Institute Nodal Officer",
+    "cause": {
+      "en": "Your college rejected your application due to discrepancies in records or non-submission of original physical certificates.",
+      "hi": "आपके कॉलेज ने रिकॉर्ड में विसंगतियों या मूल प्रमाण पत्र प्रस्तुत न करने के कारण आपका आवेदन अस्वीकृत कर दिया है।"
+    },
+    "inferred_meaning": {
+      "en": "The institute nodal officer closed the application with a rejection remark. Reversal requires college administrative clarification.",
+      "hi": "संस्थान नोडल अधिकारी ने अस्वीकृति टिप्पणी के साथ आवेदन बंद कर दिया। इसे बदलने के लिए कॉलेज प्रशासनिक स्पष्टीकरण की आवश्यकता है।"
+    },
+    "who_acts": "institute",
+    "responsibility_label": {
+      "en": "Institute Action Needed",
+      "hi": "संस्थान कार्रवाई आवश्यक"
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "where": {
+          "en": "College Scholarship Helpdesk",
+          "hi": "कॉलेज छात्रवृत्ति सहायता पटल"
+        },
+        "carry": [
+          "Printed Rejection Status",
+          "Original Certificates",
+          "Admission Proof"
+        ],
+        "say": {
+          "en": "Sir, my scholarship application was marked rejected with this remark. Could you please clarify if this can be recalled or appealed?",
+          "hi": "सर, मेरा छात्रवृत्ति आवेदन इस टिप्पणी के साथ अस्वीकृत किया गया है। क्या इसे पुनः समीक्षा हेतु खोला जा सकता है?"
+        }
+      },
+      {
+        "step_number": 2,
+        "where": {
+          "en": "Official Grievance Section",
+          "hi": "आधिकारिक शिकायत अनुभाग"
+        },
+        "carry": [
+          "College Written Response"
+        ],
+        "say": {
+          "en": "Filing formal representation with proof of valid admission.",
+          "hi": "वैध प्रवेश प्रमाण के साथ औपचारिक प्रतिवेदन दर्ज कर रहा हूँ।"
+        }
+      }
+    ],
+    "typical_wait": {
+      "en": "Reversal of rejection requires administrative intervention from state/district nodal officer.",
+      "hi": "अस्वीकृति निरस्तीकरण के लिए जिला या राज्य नोडल अधिकारी के प्रशासनिक हस्तक्षेप की आवश्यकता होती है।"
+    },
+    "deadline_text": {
+      "en": "Check the date on the portal.",
+      "hi": "पोर्टल पर तारीख की जांच करें।"
+    },
+    "escalate_if": {
+      "en": "If rejected in error and institute confirms mistake, request INO to escalate to District Nodal Officer (DNO).",
+      "hi": "यदि गलती से अस्वीकृत हुआ है, तो संस्थान नोडल अधिकारी से जिला नोडल अधिकारी को सूचित करने का अनुरोध करें।"
+    },
+    "official_destination": {
+      "url": "https://scholarships.gov.in/",
+      "label": {
+        "en": "Login to NSP to Review Rejection Remark",
+        "hi": "अस्वीकृति टिप्पणी की समीक्षा हेतु एनएसपी लॉगिन करें"
+      }
+    },
+    "grievance_enabled": true,
+    "source": {
+      "title": "NSP Institute Verification Guidelines",
+      "issuer": "National Scholarship Division, MoE",
+      "url": "https://scholarships.gov.in/",
+      "checked_on": "2026-10-25"
+    },
+    "reviewed_by": [
+      "draft_author"
+    ]
+  },
+  {
+    "id": "nsp_unclear_document",
+    "status": "draft",
+    "scheme_scope": "NSP Post Matric (pilot)",
+    "category": "returned",
+    "triggers": [
+      "unclear document",
+      "document blurred",
+      "re-upload certificate",
+      "income certificate blurred",
+      "marksheet not readable",
+      "अस्पष्ट दस्तावेज"
+    ],
+    "negative_triggers": [
+      "bank",
+      "approved"
+    ],
+    "keywords": [
+      "unclear",
+      "blurred",
+      "document",
+      "certificate",
+      "re-upload",
+      "marksheet",
+      "income",
+      "dastavej"
+    ],
+    "language_variants": {
+      "en": [
+        "uploaded document blurred or unreadable",
+        "re-upload valid income or marksheet certificate",
+        "document not clear on portal"
+      ],
+      "hi": [
+        "अपलोड किया गया दस्तावेज अस्पष्ट",
+        "प्रमाण पत्र दोबारा अपलोड करें",
+        "दस्तावेज पठनीय नहीं है"
+      ],
+      "hinglish": [
+        "document clear nahi hai re-upload karo",
+        "marksheet blurred dikh rahi hai",
+        "certificate scan sahi nahi"
+      ]
+    },
+    "description": "Application returned because an uploaded certificate or marksheet is blurred, incomplete, or unreadable",
+    "what_the_screen_says": "Defective: Uploaded document is blurred, unreadable, or invalid certificate",
+    "cause": {
+      "en": "The verifying officer could not read the scanned certificate you uploaded; a clean scanned copy must be submitted.",
+      "hi": "सत्यापन अधिकारी आपके द्वारा अपलोड किए गए स्कैन किए गए प्रमाण पत्र को पढ़ नहीं सके; एक स्पष्ट प्रति जमा करनी होगी।"
+    },
+    "inferred_meaning": {
+      "en": "The scrutiny team identified illegible or incomplete documentation. The student must re-scan and upload valid PDF or JPEG files.",
+      "hi": "सत्यापन दल ने अपठनीय या अधूरा दस्तावेज पाया। विद्यार्थी को स्पष्ट पीडीएफ या जेपेग फाइल पुनः स्कैन कर अपलोड करनी होगी।"
+    },
+    "who_acts": "student",
+    "responsibility_label": {
+      "en": "Student Action Needed",
+      "hi": "विद्यार्थी कार्रवाई आवश्यक"
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "where": {
+          "en": "Local Scanner or Document Centre",
+          "hi": "स्थानीय स्कैनर या दस्तावेज केंद्र"
+        },
+        "carry": [
+          "Original Clean Certificate"
+        ],
+        "say": {
+          "en": "Scanning document in clear color high resolution under portal size limit.",
+          "hi": "पोर्टल आकार सीमा के भीतर स्पष्ट रंगीन उच्च गुणवत्ता में दस्तावेज स्कैन कर रहा हूँ।"
+        }
+      },
+      {
+        "step_number": 2,
+        "where": {
+          "en": "Official NSP Portal",
+          "hi": "आधिकारिक एनएसपी पोर्टल"
+        },
+        "carry": [
+          "Login Credentials",
+          "Newly Scanned File"
+        ],
+        "say": {
+          "en": "Re-uploading clear certificate under Defective Application correction section.",
+          "hi": "दोषपूर्ण आवेदन सुधार अनुभाग के तहत स्पष्ट प्रमाण पत्र पुनः अपलोड कर रहा हूँ।"
+        }
+      },
+      {
+        "step_number": 3,
+        "where": {
+          "en": "Institute Scholarship Helpdesk",
+          "hi": "संस्थान छात्रवृत्ति सहायता पटल"
+        },
+        "carry": [
+          "Original Document",
+          "Updated Submission Slip"
+        ],
+        "say": {
+          "en": "Sir, I have replaced the blurred document with a clean scan. Kindly review my form.",
+          "hi": "सर, मैंने अस्पष्ट दस्तावेज को साफ स्कैन से बदल दिया है। कृपया मेरे फॉर्म की पुनः समीक्षा करें।"
+        }
+      }
+    ],
+    "typical_wait": {
+      "en": "Re-examination usually takes 3 to 5 working days following re-submission.",
+      "hi": "पुनः जमा करने के बाद पुनः परीक्षण में सामान्यतः 3 से 5 कार्यदिवस लगते हैं।"
+    },
+    "deadline_text": {
+      "en": "Check the date on the portal.",
+      "hi": "पोर्टल पर तारीख की जांच करें।"
+    },
+    "escalate_if": {
+      "en": "If upload window fails or closes prematurely, contact the college scholarship coordinator immediately.",
+      "hi": "यदि अपलोड विंडो बंद है या तकनीकी त्रुटि आती है, तो तुरंत कॉलेज समन्वयक से संपर्क करें।"
+    },
+    "official_destination": {
+      "url": "https://scholarships.gov.in/",
+      "label": {
+        "en": "Re-upload Documents on NSP",
+        "hi": "एनएसपी पर दस्तावेज पुनः अपलोड करें"
+      }
+    },
+    "grievance_enabled": true,
+    "source": {
+      "title": "NSP Document Scrutiny Handbook",
+      "issuer": "National Scholarship Division, MoE / MeitY",
+      "url": "https://scholarships.gov.in/",
+      "checked_on": "2026-10-25"
+    },
+    "reviewed_by": [
+      "draft_author"
+    ]
+  }
+]

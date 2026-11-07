@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "defective": ["doshpurna", "doshpurn", "dosh purn", "dosh poorn", "defect", "defetive", "returned", "vapasi"],
+    "institute": ["college", "school", "colg", "sanstha", "ino"],
+    "district": ["dno", "jila", "dist"],
+    "state": ["sno", "rajya"],
+    "pending": ["lambit", "lambi", "baki", "waiting", "ruka"],
+    "rejected": ["kharij", "reject", "nirast", "asweekar", "asweekrit"],
+    "bank": ["khata", "account", "npci", "pfms", "dbt", "ifsc"],
+    "duplicate": ["dohra", "multiple", "doosra"],
+    "unclear": ["blurred", "aspasht", "unreadable"]
+  }
+}

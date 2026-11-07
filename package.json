@@ -1,0 +1,35 @@
+{
+  "name": "wajah",
+  "version": "1.0.0",
+  "description": "ScholarSaathi (formerly WAJAH) — Your Complete Student Scholarship Assistant",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run lint:library && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:library": "node scripts/lint-library.mjs",
+    "test": "node scripts/run-all-tests.mjs",
+    "test:vitest": "vitest run",
+    "test:matcher": "node scripts/eval-matcher.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.470.0",
+    "next": "^15.1.0",
+    "next-intl": "^3.26.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.0.0",
+    "daisyui": "^5.0.0-beta.9",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.0.0"
+  }
+}

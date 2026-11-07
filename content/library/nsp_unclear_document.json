@@ -1,0 +1,136 @@
+{
+  "id": "nsp_unclear_document",
+  "status": "draft",
+  "scheme_scope": "NSP Post Matric (pilot)",
+  "category": "returned",
+  "triggers": [
+    "unclear document",
+    "document blurred",
+    "re-upload certificate",
+    "income certificate blurred",
+    "marksheet not readable",
+    "अस्पष्ट दस्तावेज"
+  ],
+  "negative_triggers": [
+    "bank",
+    "approved"
+  ],
+  "keywords": [
+    "unclear",
+    "blurred",
+    "document",
+    "certificate",
+    "re-upload",
+    "marksheet",
+    "income",
+    "dastavej"
+  ],
+  "language_variants": {
+    "en": [
+      "uploaded document blurred or unreadable",
+      "re-upload valid income or marksheet certificate",
+      "document not clear on portal"
+    ],
+    "hi": [
+      "अपलोड किया गया दस्तावेज अस्पष्ट",
+      "प्रमाण पत्र दोबारा अपलोड करें",
+      "दस्तावेज पठनीय नहीं है"
+    ],
+    "hinglish": [
+      "document clear nahi hai re-upload karo",
+      "marksheet blurred dikh rahi hai",
+      "certificate scan sahi nahi"
+    ]
+  },
+  "description": "Application returned because an uploaded certificate or marksheet is blurred, incomplete, or unreadable",
+  "what_the_screen_says": "Defective: Uploaded document is blurred, unreadable, or invalid certificate",
+  "cause": {
+    "en": "The verifying officer could not read the scanned certificate you uploaded; a clean scanned copy must be submitted.",
+    "hi": "सत्यापन अधिकारी आपके द्वारा अपलोड किए गए स्कैन किए गए प्रमाण पत्र को पढ़ नहीं सके; एक स्पष्ट प्रति जमा करनी होगी।"
+  },
+  "inferred_meaning": {
+    "en": "The scrutiny team identified illegible or incomplete documentation. The student must re-scan and upload valid PDF or JPEG files.",
+    "hi": "सत्यापन दल ने अपठनीय या अधूरा दस्तावेज पाया। विद्यार्थी को स्पष्ट पीडीएफ या जेपेग फाइल पुनः स्कैन कर अपलोड करनी होगी।"
+  },
+  "who_acts": "student",
+  "responsibility_label": {
+    "en": "Student Action Needed",
+    "hi": "विद्यार्थी कार्रवाई आवश्यक"
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "where": {
+        "en": "Local Scanner or Document Centre",
+        "hi": "स्थानीय स्कैनर या दस्तावेज केंद्र"
+      },
+      "carry": [
+        "Original Clean Certificate"
+      ],
+      "say": {
+        "en": "Scanning document in clear color high resolution under portal size limit.",
+        "hi": "पोर्टल आकार सीमा के भीतर स्पष्ट रंगीन उच्च गुणवत्ता में दस्तावेज स्कैन कर रहा हूँ।"
+      }
+    },
+    {
+      "step_number": 2,
+      "where": {
+        "en": "Official NSP Portal",
+        "hi": "आधिकारिक एनएसपी पोर्टल"
+      },
+      "carry": [
+        "Login Credentials",
+        "Newly Scanned File"
+      ],
+      "say": {
+        "en": "Re-uploading clear certificate under Defective Application correction section.",
+        "hi": "दोषपूर्ण आवेदन सुधार अनुभाग के तहत स्पष्ट प्रमाण पत्र पुनः अपलोड कर रहा हूँ।"
+      }
+    },
+    {
+      "step_number": 3,
+      "where": {
+        "en": "Institute Scholarship Helpdesk",
+        "hi": "संस्थान छात्रवृत्ति सहायता पटल"
+      },
+      "carry": [
+        "Original Document",
+        "Updated Submission Slip"
+      ],
+      "say": {
+        "en": "Sir, I have replaced the blurred document with a clean scan. Kindly review my form.",
+        "hi": "सर, मैंने अस्पष्ट दस्तावेज को साफ स्कैन से बदल दिया है। कृपया मेरे फॉर्म की पुनः समीक्षा करें।"
+      }
+    }
+  ],
+  "typical_wait": {
+    "en": "Re-examination usually takes 3 to 5 working days following re-submission.",
+    "hi": "पुनः जमा करने के बाद पुनः परीक्षण में सामान्यतः 3 से 5 कार्यदिवस लगते हैं।"
+  },
+  "deadline_text": {
+    "en": "Check the date on the portal.",
+    "hi": "पोर्टल पर तारीख की जांच करें।"
+  },
+  "escalate_if": {
+    "en": "If upload window fails or closes prematurely, contact the college scholarship coordinator immediately.",
+    "hi": "यदि अपलोड विंडो बंद है या तकनीकी त्रुटि आती है, तो तुरंत कॉलेज समन्वयक से संपर्क करें।"
+  },
+  "official_destination": {
+    "url": "https://scholarships.gov.in/",
+    "label": {
+      "en": "Re-upload Documents on NSP",
+      "hi": "एनएसपी पर दस्तावेज पुनः अपलोड करें"
+    }
+  },
+  "grievance_enabled": true,
+  "source": {
+    "title": "NSP Document Scrutiny Handbook",
+    "issuer": "National Scholarship Division, MoE / MeitY",
+    "url": "https://scholarships.gov.in/",
+    "checked_on": "2026-10-25"
+  },
+  "reviewed_by": [
+    "draft_author"
+  ]
+}
+

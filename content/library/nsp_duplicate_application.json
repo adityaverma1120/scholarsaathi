@@ -1,0 +1,119 @@
+{
+  "id": "nsp_duplicate_application",
+  "status": "draft",
+  "scheme_scope": "NSP Post Matric (pilot)",
+  "category": "not_approved",
+  "triggers": [
+    "duplicate application detected",
+    "duplicate application",
+    "already applied with same aadhaar",
+    "doosra aavedan",
+    "समान आधार से दोहरा आवेदन"
+  ],
+  "negative_triggers": [
+    "bank",
+    "approved"
+  ],
+  "keywords": [
+    "duplicate",
+    "multiple",
+    "aadhaar",
+    "already",
+    "registered",
+    "dohra",
+    "same"
+  ],
+  "language_variants": {
+    "en": [
+      "duplicate application detected",
+      "already submitted an application",
+      "multiple applications with same aadhaar"
+    ],
+    "hi": [
+      "समान आधार से दोहरा आवेदन",
+      "एक से अधिक आवेदन पाए गए",
+      "पहले से पंजीकृत आवेदन"
+    ],
+    "hinglish": [
+      "duplicate application show kar raha hai",
+      "ek se jyada form bhar diya tha",
+      "same aadhaar already registered"
+    ]
+  },
+  "description": "Application marked rejected because a duplicate application was detected on NSP",
+  "what_the_screen_says": "Application Rejected: Duplicate Application Detected with Same Aadhaar / Student Details",
+  "cause": {
+    "en": "NSP rules permit only one active scholarship application per student; a duplicate submission with your details was found.",
+    "hi": "एनएसपी नियमों के अनुसार प्रति विद्यार्थी केवल एक सक्रिय आवेदन की अनुमति है; आपके विवरण के साथ दोहरा आवेदन मिला है।"
+  },
+  "inferred_meaning": {
+    "en": "The system de-duplicated records and rejected this entry because another active application exists under this Aadhaar or demographic ID.",
+    "hi": "सिस्टम ने रिकॉर्ड की जांच की और इस प्रविष्टि को अस्वीकृत किया क्योंकि इस आधार या विवरण के तहत दूसरा सक्रिय आवेदन मौजूद है।"
+  },
+  "who_acts": "student",
+  "responsibility_label": {
+    "en": "Student Action Needed",
+    "hi": "विद्यार्थी कार्रवाई आवश्यक"
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "where": {
+        "en": "Official NSP Portal",
+        "hi": "आधिकारिक एनएसपी पोर्टल"
+      },
+      "carry": [
+        "Registered Mobile Number"
+      ],
+      "say": {
+        "en": "I am checking which application ID was retained as the primary submission.",
+        "hi": "मैं देख रहा हूँ कि कौन सा आवेदन मुख्य माना गया है।"
+      }
+    },
+    {
+      "step_number": 2,
+      "where": {
+        "en": "State Nodal Officer Helpdesk",
+        "hi": "राज्य नोडल अधिकारी सहायता पटल"
+      },
+      "carry": [
+        "Both Application IDs",
+        "Aadhaar Card"
+      ],
+      "say": {
+        "en": "Submitting written clarification to cancel the accidental second application.",
+        "hi": "गलती से भरे गए दूसरे आवेदन को रद्द कराने हेतु लिखित अनुरोध प्रस्तुत कर रहा हूँ।"
+      }
+    }
+  ],
+  "typical_wait": {
+    "en": "Administrative resolution of duplicate applications depends on state nodal officer approval.",
+    "hi": "दोहरे आवेदनों का प्रशासनिक समाधान राज्य नोडल अधिकारी के अनुमोदन पर निर्भर करता है।"
+  },
+  "deadline_text": {
+    "en": "Check the date on the portal.",
+    "hi": "पोर्टल पर तारीख की जांच करें।"
+  },
+  "escalate_if": {
+    "en": "If duplicate was registered fraudulently, lodge a complaint immediately on NSP national grievance desk.",
+    "hi": "यदि किसी अन्य ने आपके आधार का दुरुपयोग किया है, तो तुरंत एनएसपी राष्ट्रीय शिकायत पटल पर शिकायत दर्ज करें।"
+  },
+  "official_destination": {
+    "url": "https://scholarships.gov.in/",
+    "label": {
+      "en": "Review Registered Applications on NSP",
+      "hi": "एनएसपी पर पंजीकृत आवेदनों की समीक्षा करें"
+    }
+  },
+  "grievance_enabled": true,
+  "source": {
+    "title": "NSP De-duplication Policy",
+    "issuer": "National Scholarship Division, MoE / MeitY",
+    "url": "https://scholarships.gov.in/",
+    "checked_on": "2026-10-25"
+  },
+  "reviewed_by": [
+    "draft_author"
+  ]
+}
+

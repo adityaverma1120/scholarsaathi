@@ -1,0 +1,37 @@
+{
+  "terms": [
+    {
+      "id": "defective",
+      "term": { "en": "Defective", "hi": "दोषपूर्ण (डिफेक्टिव)" },
+      "definition": {
+        "en": "Your application has an error or unclear document that must be corrected and resubmitted before the deadline.",
+        "hi": "आपके आवेदन में कोई त्रुटि या अस्पष्ट दस्तावेज है जिसे समय सीमा से पहले ठीक करके पुनः जमा करना होगा।"
+      }
+    },
+    {
+      "id": "nodal_officer",
+      "term": { "en": "Nodal Officer (INO)", "hi": "नोडल अधिकारी" },
+      "definition": {
+        "en": "The designated teacher or administrative staff member in your college/school who verifies student scholarship applications.",
+        "hi": "आपके कॉलेज/स्कूल के शिक्षक या कर्मचारी जो छात्रवृत्ति आवेदनों का सत्यापन करते हैं।"
+      }
+    },
+    {
+      "id": "pfms",
+      "term": { "en": "PFMS", "hi": "पीएफएमएस" },
+      "definition": {
+        "en": "Public Financial Management System, the central government payment portal that processes scholarship bank transfers.",
+        "hi": "सार्वजनिक वित्तीय प्रबंधन प्रणाली, सरकारी भुगतान पोर्टल जो छात्रवृत्ति बैंक खातों में भेजता है।"
+      }
+    },
+    {
+      "id": "aadhaar_seeding",
+      "term": { "en": "Aadhaar Seeding / NPCI Mapping", "hi": "आधार सीडिंग / एनपीसीआई मैपिंग" },
+      "definition": {
+        "en": "Linking your bank account with Aadhaar in the NPCI server to receive Direct Benefit Transfer (DBT) funds.",
+        "hi": "डीबीटी सरकारी लाभ प्राप्त करने के लिए एनपीसीआई सर्वर में अपने बैंक खाते को आधार से जोड़ना।"
+      }
+    }
+  ]
+}
+

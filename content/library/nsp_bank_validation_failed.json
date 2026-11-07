@@ -1,0 +1,135 @@
+{
+  "id": "nsp_bank_validation_failed",
+  "status": "draft",
+  "scheme_scope": "NSP Post Matric (pilot)",
+  "category": "not_approved",
+  "triggers": [
+    "bank account validation failed",
+    "bank validation failed",
+    "account rejected by pfms",
+    "ifsc invalid",
+    "बैंक खाता सत्यापन विफल"
+  ],
+  "negative_triggers": [
+    "institute",
+    "district"
+  ],
+  "keywords": [
+    "bank",
+    "pfms",
+    "npci",
+    "dbt",
+    "ifsc",
+    "account",
+    "validation",
+    "khata"
+  ],
+  "language_variants": {
+    "en": [
+      "bank validation failed",
+      "account validation rejected by pfms",
+      "invalid bank account details"
+    ],
+    "hi": [
+      "बैंक सत्यापन विफल",
+      "खाता विवरण अमान्य",
+      "पीएफएमएस द्वारा बैंक अस्वीकृत"
+    ],
+    "hinglish": [
+      "bank validation fail ho gaya",
+      "account match nahi hua",
+      "pfms ne reject kiya"
+    ]
+  },
+  "description": "Bank account validation failed on NSP / PFMS due to name mismatch or invalid details",
+  "what_the_screen_says": "Bank Account Validation Failed: Name mismatch or IFSC invalid or account inactive",
+  "cause": {
+    "en": "PFMS could not validate your bank account because of name spelling differences, invalid IFSC, or inactive DBT mapping.",
+    "hi": "पीएफएमएस आपके बैंक खाते का सत्यापन नहीं कर सका क्योंकि नाम की वर्तनी में अंतर, अमान्य आईएफएससी या निष्क्रिय डीबीटी मैपिंग है।"
+  },
+  "inferred_meaning": {
+    "en": "The bank details registered in NSP do not match PFMS or NPCI records. Bank seeding and account correction are required.",
+    "hi": "एनएसपी पर दर्ज बैंक विवरण पीएफएमएस या एनपीसीआई रिकॉर्ड से मेल नहीं खाते। बैंक सीडिंग और खाता सुधार आवश्यक है।"
+  },
+  "who_acts": "bank",
+  "responsibility_label": {
+    "en": "Bank & Student Action Needed",
+    "hi": "बैंक एवं विद्यार्थी कार्रवाई आवश्यक"
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "where": {
+        "en": "Bank Home Branch",
+        "hi": "बैंक गृह शाखा"
+      },
+      "carry": [
+        "Aadhaar Card",
+        "Bank Passbook"
+      ],
+      "say": {
+        "en": "Please check if my bank account is active and seeded with Aadhaar for NPCI DBT.",
+        "hi": "कृपया जांचें कि क्या मेरा बैंक खाता सक्रिय है और एनपीसीआई डीबीटी के लिए आधार से लिंक है।"
+      }
+    },
+    {
+      "step_number": 2,
+      "where": {
+        "en": "Official NSP Portal",
+        "hi": "आधिकारिक एनएसपी पोर्टल"
+      },
+      "carry": [
+        "Verified Passbook with Correct IFSC"
+      ],
+      "say": {
+        "en": "Updating bank account details if correction window is open on portal.",
+        "hi": "पोर्टल पर सुधार विंडो खुली होने पर सही बैंक विवरण अपडेट कर रहा हूँ।"
+      }
+    },
+    {
+      "step_number": 3,
+      "where": {
+        "en": "Official PFMS Portal",
+        "hi": "आधिकारिक पीएफएमएस पोर्टल"
+      },
+      "carry": [
+        "Application ID",
+        "Bank Account Number"
+      ],
+      "say": {
+        "en": "Tracking DBT payment status on Know Your Payments section.",
+        "hi": "नो योर पेमेंट्स अनुभाग में डीबीटी भुगतान स्थिति देख रहा हूँ।"
+      }
+    }
+  ],
+  "typical_wait": {
+    "en": "NPCI Aadhaar seeding takes 48 to 72 hours to reflect across national payment systems.",
+    "hi": "एनपीसीआई आधार सीडिंग को राष्ट्रीय भुगतान प्रणालियों में दिखने में 48 से 72 घंटे लगते हैं।"
+  },
+  "deadline_text": {
+    "en": "Check the date on the portal.",
+    "hi": "पोर्टल पर तारीख की जांच करें।"
+  },
+  "escalate_if": {
+    "en": "If bank branch does not link DBT, submit NPCI Aadhaar seeding mandate form to branch manager.",
+    "hi": "यदि बैंक शाखा डीबीटी लिंक नहीं करती है, तो शाखा प्रबंधक को एनपीसीआई आधार सीडिंग फॉर्म प्रस्तुत करें।"
+  },
+  "official_destination": {
+    "url": "https://pfms.nic.in",
+    "label": {
+      "en": "Check DBT Status on PFMS Portal",
+      "hi": "पीएफएमएस पोर्टल पर डीबीटी स्थिति देखें"
+    }
+  },
+  "grievance_enabled": true,
+  "source": {
+    "title": "PFMS Direct Benefit Transfer Guidelines",
+    "issuer": "Public Financial Management System, Ministry of Finance",
+    "url": "https://pfms.nic.in",
+    "checked_on": "2026-10-25"
+  },
+  "reviewed_by": [
+    "draft_author"
+  ]
+}
+

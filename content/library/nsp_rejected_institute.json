@@ -1,0 +1,119 @@
+{
+  "id": "nsp_rejected_institute",
+  "status": "draft",
+  "scheme_scope": "NSP Post Matric (pilot)",
+  "category": "not_approved",
+  "triggers": [
+    "rejected by institute",
+    "institute rejected",
+    "rejected at institute level",
+    "संस्थान द्वारा अस्वीकृत"
+  ],
+  "negative_triggers": [
+    "defective",
+    "district",
+    "approved",
+    "pending"
+  ],
+  "keywords": [
+    "rejected",
+    "institute",
+    "asweekrit",
+    "disapproved",
+    "cancelled",
+    "college"
+  ],
+  "language_variants": {
+    "en": [
+      "rejected by institute",
+      "college nodal officer rejected",
+      "institute level rejection"
+    ],
+    "hi": [
+      "संस्थान द्वारा अस्वीकृत",
+      "कॉलेज ने निरस्त कर दिया",
+      "संस्थान स्तर पर अस्वीकार"
+    ],
+    "hinglish": [
+      "college ne reject kar diya",
+      "institute se reject ho gaya",
+      "ino disapproved"
+    ]
+  },
+  "description": "Application marked rejected by Institute Nodal Officer",
+  "what_the_screen_says": "Application Rejected by Institute Nodal Officer",
+  "cause": {
+    "en": "Your college rejected your application due to discrepancies in records or non-submission of original physical certificates.",
+    "hi": "आपके कॉलेज ने रिकॉर्ड में विसंगतियों या मूल प्रमाण पत्र प्रस्तुत न करने के कारण आपका आवेदन अस्वीकृत कर दिया है।"
+  },
+  "inferred_meaning": {
+    "en": "The institute nodal officer closed the application with a rejection remark. Reversal requires college administrative clarification.",
+    "hi": "संस्थान नोडल अधिकारी ने अस्वीकृति टिप्पणी के साथ आवेदन बंद कर दिया। इसे बदलने के लिए कॉलेज प्रशासनिक स्पष्टीकरण की आवश्यकता है।"
+  },
+  "who_acts": "institute",
+  "responsibility_label": {
+    "en": "Institute Action Needed",
+    "hi": "संस्थान कार्रवाई आवश्यक"
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "where": {
+        "en": "College Scholarship Helpdesk",
+        "hi": "कॉलेज छात्रवृत्ति सहायता पटल"
+      },
+      "carry": [
+        "Printed Rejection Status",
+        "Original Certificates",
+        "Admission Proof"
+      ],
+      "say": {
+        "en": "Sir, my scholarship application was marked rejected with this remark. Could you please clarify if this can be recalled or appealed?",
+        "hi": "सर, मेरा छात्रवृत्ति आवेदन इस टिप्पणी के साथ अस्वीकृत किया गया है। क्या इसे पुनः समीक्षा हेतु खोला जा सकता है?"
+      }
+    },
+    {
+      "step_number": 2,
+      "where": {
+        "en": "Official Grievance Section",
+        "hi": "आधिकारिक शिकायत अनुभाग"
+      },
+      "carry": [
+        "College Written Response"
+      ],
+      "say": {
+        "en": "Filing formal representation with proof of valid admission.",
+        "hi": "वैध प्रवेश प्रमाण के साथ औपचारिक प्रतिवेदन दर्ज कर रहा हूँ।"
+      }
+    }
+  ],
+  "typical_wait": {
+    "en": "Reversal of rejection requires administrative intervention from state/district nodal officer.",
+    "hi": "अस्वीकृति निरस्तीकरण के लिए जिला या राज्य नोडल अधिकारी के प्रशासनिक हस्तक्षेप की आवश्यकता होती है।"
+  },
+  "deadline_text": {
+    "en": "Check the date on the portal.",
+    "hi": "पोर्टल पर तारीख की जांच करें।"
+  },
+  "escalate_if": {
+    "en": "If rejected in error and institute confirms mistake, request INO to escalate to District Nodal Officer (DNO).",
+    "hi": "यदि गलती से अस्वीकृत हुआ है, तो संस्थान नोडल अधिकारी से जिला नोडल अधिकारी को सूचित करने का अनुरोध करें।"
+  },
+  "official_destination": {
+    "url": "https://scholarships.gov.in/",
+    "label": {
+      "en": "Login to NSP to Review Rejection Remark",
+      "hi": "अस्वीकृति टिप्पणी की समीक्षा हेतु एनएसपी लॉगिन करें"
+    }
+  },
+  "grievance_enabled": true,
+  "source": {
+    "title": "NSP Institute Verification Guidelines",
+    "issuer": "National Scholarship Division, MoE",
+    "url": "https://scholarships.gov.in/",
+    "checked_on": "2026-10-25"
+  },
+  "reviewed_by": [
+    "draft_author"
+  ]
+}

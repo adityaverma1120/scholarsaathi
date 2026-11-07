@@ -1,0 +1,121 @@
+{
+  "id": "nsp_approved_money_not_received",
+  "status": "draft",
+  "scheme_scope": "NSP Post Matric (pilot)",
+  "category": "waiting",
+  "triggers": [
+    "scholarship sanctioned",
+    "payment under processing",
+    "processed to pfms",
+    "money not received",
+    "scholarship not received",
+    "not received",
+    "राशि प्राप्त नहीं हुई"
+  ],
+  "negative_triggers": [
+    "rejected",
+    "defective"
+  ],
+  "keywords": [
+    "sanctioned",
+    "pfms",
+    "disbursement",
+    "processing",
+    "credited",
+    "payment",
+    "paisa"
+  ],
+  "language_variants": {
+    "en": [
+      "scholarship sanctioned payment under process",
+      "processed for payment pfms",
+      "approved but money not credited"
+    ],
+    "hi": [
+      "छात्रवृत्ति स्वीकृत भुगतान प्रक्रियाधीन",
+      "पीएफएमएस को भेजा गया",
+      "अनुमोदित किंतु राशि अप्राप्त"
+    ],
+    "hinglish": [
+      "scholarship approve ho gayi paisa nahi aaya",
+      "payment under processing dikha raha hai",
+      "pfms sent"
+    ]
+  },
+  "description": "Application sanctioned by ministry and forwarded to PFMS for DBT payment processing",
+  "what_the_screen_says": "Scholarship Sanctioned: Payment File Sent to PFMS for DBT Processing",
+  "cause": {
+    "en": "Your application has passed all administrative reviews and the payment batch is queued at PFMS for bank credit.",
+    "hi": "आपका आवेदन सभी प्रशासनिक जांचों में उत्तीर्ण हो चुका है और बैंक खाते में अंतरण हेतु पीएफएमएस में कतारबद्ध है।"
+  },
+  "inferred_meaning": {
+    "en": "Approval is complete at ministry level. The transaction is in the banking clearance queue. Verify DBT seeding.",
+    "hi": "मंत्रालय स्तर पर स्वीकृति पूर्ण है। लेनदेन बैंकिंग निकासी प्रक्रिया में है। कृपया डीबीटी सीडिंग सुनिश्चित करें।"
+  },
+  "who_acts": "bank",
+  "responsibility_label": {
+    "en": "Payment Processing / Bank",
+    "hi": "भुगतान प्रक्रियाधीन / बैंक"
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "where": {
+        "en": "Official PFMS Portal",
+        "hi": "आधिकारिक पीएफएमएस पोर्टल"
+      },
+      "carry": [
+        "Application ID",
+        "Bank Account Number"
+      ],
+      "say": {
+        "en": "Tracking DBT payment token and disbursement date on PFMS.",
+        "hi": "पीएफएमएस पर डीबीटी भुगतान टोकन और अंतरण तिथि देख रहा हूँ।"
+      }
+    },
+    {
+      "step_number": 2,
+      "where": {
+        "en": "Bank Branch",
+        "hi": "बैंक शाखा"
+      },
+      "carry": [
+        "Aadhaar Card",
+        "Passbook"
+      ],
+      "say": {
+        "en": "Inquiring about incoming DBT scholarship credit status with my Aadhaar linked account.",
+        "hi": "अपने आधार लिंक खाते में आने वाली डीबीटी छात्रवृत्ति क्रेडिट स्थिति के बारे में जानकारी ले रहा हूँ।"
+      }
+    }
+  ],
+  "typical_wait": {
+    "en": "PFMS batch disbursement typically takes 2 to 3 weeks following file clearance.",
+    "hi": "पीएफएमएस बैच भुगतान सामान्यतः फाइल निकासी के बाद 2 से 3 सप्ताह का समय लेता है।"
+  },
+  "deadline_text": {
+    "en": "Check the date on the portal.",
+    "hi": "पोर्टल पर तारीख की जांच करें।"
+  },
+  "escalate_if": {
+    "en": "If transaction shows credited on PFMS but not in passbook, request transaction reference (UTR) from bank.",
+    "hi": "यदि पीएफएमएस पर जमा दिखता है परंतु पासबुक में नहीं, तो बैंक से यूटीआर नंबर मांगें।"
+  },
+  "official_destination": {
+    "url": "https://pfms.nic.in",
+    "label": {
+      "en": "Track Payment on PFMS",
+      "hi": "पीएफएमएस पर भुगतान ट्रैक करें"
+    }
+  },
+  "grievance_enabled": true,
+  "source": {
+    "title": "PFMS Scholarship Payment Process Manual",
+    "issuer": "Public Financial Management System, Ministry of Finance",
+    "url": "https://pfms.nic.in",
+    "checked_on": "2026-10-25"
+  },
+  "reviewed_by": [
+    "draft_author"
+  ]
+}

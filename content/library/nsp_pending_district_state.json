@@ -1,0 +1,121 @@
+{
+  "id": "nsp_pending_district_state",
+  "status": "draft",
+  "scheme_scope": "NSP Post Matric (pilot)",
+  "category": "waiting",
+  "triggers": [
+    "pending for district verification",
+    "pending at district level",
+    "pending at state level",
+    "pending at dno",
+    "जिला स्तर पर लंबित"
+  ],
+  "negative_triggers": [
+    "institute",
+    "defective",
+    "bank",
+    "rejected"
+  ],
+  "keywords": [
+    "district",
+    "state",
+    "dno",
+    "sno",
+    "nodal",
+    "pending",
+    "verification",
+    "jila"
+  ],
+  "language_variants": {
+    "en": [
+      "pending at district level",
+      "waiting for dno approval",
+      "pending for state verification"
+    ],
+    "hi": [
+      "जिला स्तर पर लंबित",
+      "डीएनओ सत्यापन की प्रतीक्षा",
+      "राज्य नोडल स्तर पर लंबित"
+    ],
+    "hinglish": [
+      "district level par pending hai",
+      "dno verification baaki hai",
+      "state level par ruka hai"
+    ]
+  },
+  "description": "Application waiting for District or State Nodal Officer verification",
+  "what_the_screen_says": "Application Pending for Verification at District / State Nodal Officer Level",
+  "cause": {
+    "en": "Your application was verified by your institute and is currently queued for district or state nodal officer verification.",
+    "hi": "आपका आवेदन आपके संस्थान द्वारा सत्यापित किया जा चुका है और वर्तमान में जिला या राज्य नोडल अधिकारी के सत्यापन हेतु प्रतीक्षारत है।"
+  },
+  "inferred_meaning": {
+    "en": "The college verification stage is complete. District or state authorities are performing second-tier administrative verification.",
+    "hi": "कॉलेज स्तर का सत्यापन पूर्ण हो चुका है। जिला या राज्य प्रशासन द्वारा द्वितीय चरण का सत्यापन किया जा रहा है।"
+  },
+  "who_acts": "district_state",
+  "responsibility_label": {
+    "en": "District / State Action Needed",
+    "hi": "जिला / राज्य कार्रवाई आवश्यक"
+  },
+  "steps": [
+    {
+      "step_number": 1,
+      "where": {
+        "en": "Official NSP Portal",
+        "hi": "आधिकारिक एनएसपी पोर्टल"
+      },
+      "carry": [
+        "Application ID"
+      ],
+      "say": {
+        "en": "I am tracking if my district verification status has been updated.",
+        "hi": "मैं देख रहा हूँ कि क्या जिला सत्यापन स्थिति अद्यतित हुई है।"
+      }
+    },
+    {
+      "step_number": 2,
+      "where": {
+        "en": "District Social Welfare or Education Office",
+        "hi": "जिला समाज कल्याण या शिक्षा कार्यालय"
+      },
+      "carry": [
+        "Application Form Copy",
+        "College Verification Certificate"
+      ],
+      "say": {
+        "en": "Sir, my application has passed institute verification. When will district-level verification be completed?",
+        "hi": "सर, मेरा आवेदन कॉलेज से सत्यापित हो चुका है। जिला स्तर पर सत्यापन कब तक पूर्ण होगा?"
+      }
+    }
+  ],
+  "typical_wait": {
+    "en": "Typically 2 to 4 weeks during state administrative verification cycles.",
+    "hi": "राज्य प्रशासनिक सत्यापन चक्र के दौरान सामान्यतः 2 से 4 सप्ताह लगते हैं।"
+  },
+  "deadline_text": {
+    "en": "Check the date on the portal.",
+    "hi": "पोर्टल पर तारीख की जांच करें।"
+  },
+  "escalate_if": {
+    "en": "If pending past state timeline, consult District Welfare Officer or file query on state helpdesk.",
+    "hi": "यदि राज्य समयसीमा के बाद भी लंबित है, तो जिला कल्याण अधिकारी से संपर्क करें।"
+  },
+  "official_destination": {
+    "url": "https://scholarships.gov.in/",
+    "label": {
+      "en": "Check DNO Status on NSP",
+      "hi": "एनएसपी पर जिला नोडल स्थिति देखें"
+    }
+  },
+  "grievance_enabled": true,
+  "source": {
+    "title": "NSP District Verification Guidelines",
+    "issuer": "Department of Higher Education, MoE",
+    "url": "https://scholarships.gov.in/",
+    "checked_on": "2026-10-25"
+  },
+  "reviewed_by": [
+    "draft_author"
+  ]
+}

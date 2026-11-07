@@ -1,0 +1,73 @@
+{
+  "mock": true,
+  "notice": "MOCK DATA — For Demonstration Purposes Only. Generated with synthetic seed.",
+  "generated_at": "2026-11-01T00:00:00Z",
+  "min_group_size": 10,
+  "top_confusing_messages": [
+    {
+      "entry_id": "nsp_defective_returned",
+      "title": "Application marked defective by Institute Nodal Officer",
+      "fault_label": "student",
+      "count": 482,
+      "suppressed": false,
+      "suggested_fix": "Edit defective fields on portal and re-submit original certificates to college"
+    },
+    {
+      "entry_id": "nsp_pending_institute",
+      "title": "Application Pending for Verification at Institute Level",
+      "fault_label": "institute_officer",
+      "count": 394,
+      "suppressed": false,
+      "suggested_fix": "Visit college scholarship desk with original physical application summary"
+    },
+    {
+      "entry_id": "nsp_bank_validation_failed",
+      "title": "Bank Account Validation Failed: Name mismatch or IFSC invalid",
+      "fault_label": "bank",
+      "count": 278,
+      "suppressed": false,
+      "suggested_fix": "Seed Aadhaar with bank account for NPCI DBT and verify active status"
+    },
+    {
+      "entry_id": "nsp_pending_district_state",
+      "title": "Application Pending for Verification at District / State Level",
+      "fault_label": "unsure",
+      "count": 186,
+      "suppressed": false,
+      "suggested_fix": "Wait for district verification drive; contact district social welfare desk"
+    },
+    {
+      "entry_id": "nsp_unclear_document",
+      "title": "Defective: Uploaded document is blurred, unreadable, or invalid",
+      "fault_label": "student",
+      "count": 145,
+      "suppressed": false,
+      "suggested_fix": "Re-scan document in color under 200 KB in high resolution PDF"
+    }
+  ],
+  "fault_split": {
+    "student": 627,
+    "institute_officer": 394,
+    "bank": 278,
+    "unsure": 186
+  },
+  "weekly_trends": [
+    {
+      "week_start": "2026-10-05",
+      "count": 240
+    },
+    {
+      "week_start": "2026-10-12",
+      "count": 315
+    },
+    {
+      "week_start": "2026-10-19",
+      "count": 420
+    },
+    {
+      "week_start": "2026-10-26",
+      "count": 510
+    }
+  ]
+}
+

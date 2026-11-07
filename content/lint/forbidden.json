@@ -1,0 +1,43 @@
+{
+  "forbidden_en": [
+    "you will get",
+    "you will be paid",
+    "money will come",
+    "you are eligible",
+    "you are not eligible",
+    "eligible",
+    "guaranteed",
+    "sure to be approved",
+    "will be approved",
+    "we have filed",
+    "we submitted",
+    "we applied for you",
+    "official wajah",
+    "government service",
+    "nsp team",
+    "on behalf of nsp",
+    "powered by nsp",
+    "approved by nsp",
+    "enter your password",
+    "share your otp",
+    "type your aadhaar",
+    "send your account number"
+  ],
+  "forbidden_hi": [
+    "आपको पैसे मिलेंगे",
+    "पैसे आ जाएंगे",
+    "आप पात्र हैं",
+    "गारंटी",
+    "स्वीकृत हो जाएगा",
+    "हमने आवेदन कर दिया",
+    "सरकारी सेवा",
+    "अपना पासवर्ड दर्ज करें",
+    "अपना ओटीपी साझा करें",
+    "अपना आधार दर्ज करें",
+    "अपना खाता नंबर भेजें"
+  ],
+  "exempt_fields": [
+    "what_the_screen_says"
+  ]
+}
+
